@@ -1,0 +1,22 @@
+.BtnImage {
+  width: 30px;
+}
+
+.BtnFavorite {
+  display: inline-block;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.BtnFavorite:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.BtnFavorite:active {
+  transform: scale(0.9);
+  transition: 0.3s;
+}

@@ -1,0 +1,16 @@
+footer{
+  width: 100%;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  background-color:#0b152b;
+  padding: 20px 0;
+}
+
+.FooterTitle{
+  font-size: 1.1rem;
+  padding: 10 5px;
+  color:rgba(0, 255, 128, 0.928);
+  font-family: 'Courier New', Courier, monospace;
+}

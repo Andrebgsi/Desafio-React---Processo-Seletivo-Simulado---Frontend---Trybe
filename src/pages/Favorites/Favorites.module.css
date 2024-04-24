@@ -1,0 +1,29 @@
+.Favorites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 1rem;
+}
+
+.HeaderFavorites {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: #213f80;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.BodyFavorites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 1rem;
+}

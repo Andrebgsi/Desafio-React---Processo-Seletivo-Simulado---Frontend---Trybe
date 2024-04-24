@@ -1,0 +1,35 @@
+.Nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: #fff;
+
+}
+
+.ButtonMenu { 
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 1rem;
+    transition: color 0.3s;
+    background-color:#426AB2;
+    padding: 10px;
+    border-bottom: 2px solid #131d31;
+    border-right: 2px solid #131d31;
+    border-radius: 10px;
+}
+
+.ButtonMenu:hover {
+    background-color: #426AB2;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.ButtonMenu:active {
+    background-color: #426AB2;
+    border-bottom: 1px solid #131d31;
+    border-right: 1px solid #131d31;
+    transform: scale(0.9);
+    transition: 0.3s;
+}

@@ -1,0 +1,35 @@
+.BtnTop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #426AB2;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color .3s;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 10px rgba(21, 21, 21, 0.686);
+}
+
+.BtnTop:hover {
+    background-color: #426AB2;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.BtnTop:active {
+    background-color: #426AB2;
+    border-bottom: 1px solid #131d31;
+    border-right: 1px solid #131d31;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.BtnTop img {
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,16 @@
+.Layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.BodyPage{
+    margin: 0;
+    display: flex;
+    place-items: top;
+    justify-content: center;
+    width: 100%;
+    background-color: aliceblue;
+}
