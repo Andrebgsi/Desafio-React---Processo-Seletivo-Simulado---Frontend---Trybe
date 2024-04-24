@@ -1,6 +1,6 @@
 .search {
   border: 2px solid transparent;
-  width: 250px;
+  width: 320px;
   height: 2.5em;
   padding: 20px;
   outline: none;
@@ -8,6 +8,7 @@
   border-radius: 0.5rem;
   background-color: #EEE;
   border-radius: 30px;
+  border: 1px solid #c7c7c772;
   transition: all 0.5s;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
 }
