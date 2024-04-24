@@ -40,3 +40,48 @@ a {
   text-decoration: none;
   color: white;
 }
+
+.Contatos{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ContatosTitle{
+    font-size: 1.5rem;
+    text-align: center;
+    color:rgba(0, 255, 128, 0.928);
+    margin-top: 80px;
+}
+
+.Contatos img{
+    width: 80px;
+}
+
+.Contatos a{
+    color: white;
+    background-color: #091121;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 255, 128, 0.928);;
+}
+
+.Contatos a:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 255, 128, 0.928);
+}
+
+.Contatos a:active {
+    border-bottom: 1px solid #131d31;
+    border-right: 1px solid #131d31;
+    transform: scale(0.9);
+    transition: 0.3s;
+}

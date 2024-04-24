@@ -1,4 +1,6 @@
 import styles from './Desafio.module.css';
+import github from '../../assets/github.svg';
+import linkedin from '../../assets/linkedin.svg';
 
 export default function Desafio() {
   return (
@@ -50,6 +52,35 @@ export default function Desafio() {
           <a target="_blank" href="https://www.ibge.gov.br/" rel="noreferrer">Site do IBGE</a>
           <h2>Vectors and icons by:</h2>
           <a href="https://www.svgrepo.com" target="_blank" rel="noreferrer">SVG Repo</a>
+
+          <h3>Retornar ao repositorio no GitHub desse projeto:</h3>
+          <a
+            href="https://github.com/Andrebgsi/Desafio-React---Processo-Seletivo-Simulado---Frontend---Trybe"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub desse projeto
+          </a>
+        </div>
+        <h1 className={ styles.ContatosTitle }>Meus contatos:</h1>
+        <div className={ styles.Contatos }>
+          <a
+            href="https://github.com/Andrebgsi"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={ github } alt="GitHub" />
+            <span>GitHub</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/andre-bacelar-goncalves/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={ linkedin } alt="LinkedIn" />
+            <span>LinkedIn</span>
+          </a>
         </div>
       </div>
     </div>

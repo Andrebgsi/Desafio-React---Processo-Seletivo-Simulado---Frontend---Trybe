@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# Desafio React + TypeScript + Vite + CSS + vitest.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desenvolver uma aplicação que consuma a API de notícias do IBGE
+e exiba as notícias em uma lista. Cada item da lista deve ter um
+botão de favoritar. Ao clicar no botão de favoritar, a notícia
+deve ser salva no localStorage e o botão deve mudar de cor para
+indicar que a notícia foi favoritada. A aplicação deve ter uma
+página de favoritos que exibe as notícias favoritadas.
 
-Currently, two official plugins are available:
+### Fornecedor da API
+- [Site do IBGE](https://www.ibge.gov.br/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Font incons
+- [Vectors and icons by svgrepo!](https://www.svgrepo.com) 
 
-## Expanding the ESLint configuration
+# Projeto em funcionamento
+Link de acesso a Página do projeto funcionando.
+- [Acessar o site!](https://desafiofront-trybe-andrebg.surge.sh/) 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Construir o projeto na sua maquina.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Clone o projeto.
+- Rode o comando `npm install` para instalar as dependencias.
+- Rode o comando `npm run dev` para inicializar o projeto.
+- Rode o comando `npm run coverage` para iniciar os testes de cobertura.
