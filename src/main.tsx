@@ -5,9 +5,9 @@ import IBGEProvider from './context/IBGEProvider.tsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <BrowserRouter>
-    <IBGEProvider>
+  <IBGEProvider>
+    <BrowserRouter>
       <App />
-    </IBGEProvider>
-  </BrowserRouter>,
+    </BrowserRouter>
+  </IBGEProvider>,
 );

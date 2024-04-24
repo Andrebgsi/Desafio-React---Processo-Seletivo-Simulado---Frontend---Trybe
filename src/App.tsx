@@ -7,7 +7,7 @@ import NotFound from './pages/not-found';
 
 function App() {
   return (
-    <div>
+    <div data-testid="app-render">
       <Routes>
         <Route path="/" element={ <Layout /> }>
           <Route index element={ <Home /> } />

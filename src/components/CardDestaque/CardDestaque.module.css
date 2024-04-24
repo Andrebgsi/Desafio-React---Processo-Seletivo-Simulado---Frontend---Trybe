@@ -8,6 +8,7 @@ a {
   justify-content:center;
   text-align: center;
   margin: 10px;
+  background-color: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   padding: 10px;
@@ -22,9 +23,9 @@ a {
 }
 
 .CardDestaque__Title{
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
-  line-height: 27px;
+  line-height: 18px;
   color: #3769d5;
   text-transform: uppercase;
   text-align: left;
@@ -32,15 +33,14 @@ a {
 }
 
 .CardDestaque__DestTitle{
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 14px;
-  text-align: center;
-  color: #2a2f3c;
+  font-size: 0.8rem;
+  color:#213f80;
+  font-style: italic;
   text-transform: uppercase;
   width: 100%;
-  margin-bottom: 10px;
+  margin: 10px;
 }
+
 .CardDestaque__Image img{
   width: 300px;
   border-radius: 5px;
@@ -63,6 +63,9 @@ a {
   line-height: 20px;
   text-align: justify;
   margin-top: 10px;
+  max-height: 5ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .CardDestaque__Line{
@@ -79,7 +82,7 @@ a {
 .CardDestaque__Link{
   display: flex;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 23.1px;
   flex-direction: row;
@@ -89,7 +92,7 @@ a {
   padding: 10px;
   gap: 10px;
   width: 167px;
-  height: 36px;
+  height: 26px;
   background: #039045;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 5px;

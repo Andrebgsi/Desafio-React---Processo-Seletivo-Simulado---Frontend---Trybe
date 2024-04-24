@@ -34,9 +34,16 @@ export default function Home() {
 
   return (
     <div className={ styles.Home }>
-
-      <div className={ styles.DestaqueHome }>
-        {filteredData.length > 0
+      <div className={ styles.HeaderDestaques }>
+        <div className={ styles.FilterSearch }>
+          <div className={ styles.Logo }>
+            <img src="https://www.ibge.gov.br/templates/novo_portal_base/imagens/logo_mobile.png" alt="IBGE" />
+          </div>
+          <Search />
+          <Filter />
+        </div>
+        <div className={ styles.DestaqueHome }>
+          {filteredData.length > 0
         && <CardDestaque
           id={ filteredData[0].id }
           imageIntro={ filteredData[0].imageIntro }
@@ -46,13 +53,8 @@ export default function Home() {
           tipo={ filteredData[0].tipo }
           data_publicacao={ filteredData[0].data_publicacao }
         />}
+        </div>
       </div>
-
-      <div className={ styles.HeaderHome }>
-        <Search />
-        <Filter />
-      </div>
-
       <div className={ styles.BodyHome }>
         {filteredData.map((news) => (
           <div key={ news.id }>

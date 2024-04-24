@@ -40,7 +40,7 @@ export default function CardDestaque({
 
   return (
     <div className={ styles.CardDestaque } data-testid={ `${id}-recommendation-title` }>
-      <h1 className={ styles.CardDestaque__DestTitle }>Notícia mais recente</h1>
+      <p className={ styles.CardDestaque__DestTitle }>Notícia mais recente</p>
       <div className={ styles.CardDestaque__Content }>
         <div className={ styles.CardDestaque__Image }>
           <img src={ ImgSrting } alt="NewsImg" />

@@ -11,6 +11,7 @@
     color: white;
     text-decoration: none;
     font-size: 1rem;
+    font-style: italic;
     margin-right: 1rem;
     transition: color 0.3s;
     background-color:#426AB2;
@@ -21,13 +22,13 @@
 }
 
 .ButtonMenu:hover {
-    background-color: #426AB2;
+    background-color: #213f80;
     transform: scale(1.02);
     transition: 0.3s;
 }
 
 .ButtonMenu:active {
-    background-color: #426AB2;
+    background-color: #213f80;
     border-bottom: 1px solid #131d31;
     border-right: 1px solid #131d31;
     transform: scale(0.9);

@@ -6,7 +6,8 @@
     align-items: center;
     background-color: white;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 80px;
+    text-align: center;
 }
 
 .header{
@@ -18,22 +19,17 @@
     
 }
 
-.Logo {
-    display: flex;
-    justify-content: center;
+.title{
     align-items: center;
-    flex-wrap: wrap;
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color:#213f80;
     font-style: italic;
-    margin: 0;
+    padding: 10px;
 }
 
-.title{
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
+.subTitle{
+    font-size: 1rem;
     color:#213f80;
     font-style: italic;
     padding: 10px;
