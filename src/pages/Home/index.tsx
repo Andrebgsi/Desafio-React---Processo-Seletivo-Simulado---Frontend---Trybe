@@ -55,6 +55,7 @@ export default function Home() {
         />}
         </div>
       </div>
+
       <div className={ styles.BodyHome }>
         {filteredData.map((news) => (
           <div key={ news.id }>

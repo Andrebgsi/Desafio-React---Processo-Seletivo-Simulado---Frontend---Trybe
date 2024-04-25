@@ -3,8 +3,11 @@ import style from './Header.module.css';
 
 export default function Header() {
   return (
-    <header className={ style.style }>
-      <h1 className={ style.title }>News fron IBGE</h1>
+    <header
+      className={ style.style }
+      data-testid="Layout-Header"
+    >
+      <h1 className={ style.title }>IBGE News</h1>
       <p className={ style.subTitle }>
         The Brazilian Institute of Geography and Statistics
       </p>

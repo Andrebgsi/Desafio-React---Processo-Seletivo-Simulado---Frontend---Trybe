@@ -11,18 +11,36 @@ export default function Filter() {
   };
 
   return (
-    <div className={ styles.FilterForm }>
+    <div className={ styles.FilterForm } data-testid="Box-Filter-News">
       <label className={ styles.radio }>
-        <input type="radio" name="filter" value="all" onChange={ handleFilter } />
+        <input
+          data-testid="Filter-Input-all"
+          type="radio"
+          name="filter"
+          value="all"
+          onChange={ handleFilter }
+        />
         <span className={ styles.name }>Todas</span>
       </label>
       <label className={ styles.radio }>
-        <input type="radio" name="filter" value="Notícia" onChange={ handleFilter } />
+        <input
+          data-testid="Filter-Input-Noticias"
+          type="radio"
+          name="filter"
+          value="Notícia"
+          onChange={ handleFilter }
+        />
         <span className={ styles.name }>Notícia</span>
       </label>
 
       <label className={ styles.radio }>
-        <input type="radio" name="filter" value="Release" onChange={ handleFilter } />
+        <input
+          data-testid="Filter-Input-Release"
+          type="radio"
+          name="filter"
+          value="Release"
+          onChange={ handleFilter }
+        />
         <span className={ styles.name }>Release</span>
       </label>
     </div>

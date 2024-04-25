@@ -39,20 +39,20 @@ export default function CardNews({
   const ImgSrting = `https://agenciadenoticias.ibge.gov.br/${imageIntro}`;
 
   return (
-    <div className={ styles.CardNews } data-testid={ `${id}-recommendation-title` }>
-      <div className={ styles.CardNews__Content }>
-        <div className={ styles.CardNews__Image }>
+    <div className={ styles.CardNews }>
+      <div data-testid="Box-Card-News" className={ styles.CardNews__Content }>
+        <div className={ styles.CardNews__Image } data-testid="Card-News-Imagem">
           <img src={ ImgSrting } alt="NewsImg" />
         </div>
-        <h2 className={ styles.CardNews__Title }>
+        <h2 className={ styles.CardNews__Title } data-testid="Card-News-Titulo">
           {titulo}
         </h2>
 
-        <p className={ styles.CardNews__Introducao }>
+        <p className={ styles.CardNews__Introducao } data-testid="Card-News-Introducao">
           {introducao}
         </p>
         <div className={ styles.CardNews__Line }>
-          <p className={ styles.CardNews__Data }>
+          <p className={ styles.CardNews__Data } data-testid="Card-News-Data">
             {DataReroativaString}
           </p>
 
@@ -61,16 +61,18 @@ export default function CardNews({
             className={ styles.CardNews__Link }
             target="_blank"
             rel="noopener noreferrer"
+            data-testid="Card-News-Link"
           >
             Leia a notícia aqui
           </a>
         </div>
 
         <div className={ styles.CardNews__Line }>
-          <p className={ styles.CardNews__Tipo }>
+          <p className={ styles.CardNews__Tipo } data-testid="Card-News-tipo">
             {tipo}
           </p>
           <BtnFavorite
+            data-testid="Card-News-btnFavorite"
             newsFavorite={ {
               id,
               titulo,
