@@ -18,8 +18,8 @@ afterEach(() => {
 describe('Testando a aplicação, testando a página Home', () => {
   it('01. Se o App renderiza', () => {
     renderWithRouter(<App />);
-    const appElement = screen.getByTestId('app-render');  
-    expect(appElement).toBeInTheDocument(); 
+    const appElement = screen.getByTestId('app-render');
+    expect(appElement).toBeInTheDocument();
   });
 
   it('02. Se a Home renderiza o Header', async () => {
@@ -70,9 +70,9 @@ describe('Testando campos de filtro e Pesquisa', () => {
 describe('Testando a navegação do Menu', () => {
   it('01. Se a Home renderiza o menu', async () => {
     vi.spyOn(global, 'fetch')
-    .mockResolvedValue({
-      json: async () => mockTestData,
-    } as Response);
+      .mockResolvedValue({
+        json: async () => mockTestData,
+      } as Response);
     renderWithRouter(<App />);
     const menu = screen.getByTestId('Menu-Header-Inicio');
     expect(menu).toBeInTheDocument();

@@ -2,7 +2,7 @@ import { NewsTypeAPI } from '../types';
 
 const URL_API_ALL = 'https://servicodados.ibge.gov.br/api/v3/noticias/?qtd=100';
 
-export const fetchApiNoticia = async () => {
+export const fetchApi = async () => {
   const response = await fetch(URL_API_ALL);
   const data = await response.json();
 

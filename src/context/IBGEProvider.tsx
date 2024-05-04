@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import IBGEContext from './IBGEContext';
-import { fetchApiNoticia } from '../services/api';
+import { fetchApi } from '../services/api';
 import useFetch from '../hooks/useFetch';
 import useLocalStorage from '../hooks/useLocalStorage';
 
@@ -13,7 +13,7 @@ type IBGEProviderProps = {
 type UpdateFavoriteType = (NewsFavoriteObj: FavoriteType) => void;
 
 function IBGEProvider({ children }: IBGEProviderProps) {
-  const { data, loading, error } = useFetch(fetchApiNoticia);
+  const { data, loading, error } = useFetch(fetchApi);
   const [filterSelect, setFilterSelect] = useState<OptionsType>('all');
   const [favorite, setFavorite] = useLocalStorage<FavoriteType[]>('favorites', []);
   const [inputSearch, setInputSearch] = useState('');
