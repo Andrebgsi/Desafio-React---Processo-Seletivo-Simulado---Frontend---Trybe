@@ -14,7 +14,7 @@ a {
   padding: 10px;
 }
 
-.CardDestaque__Content{
+.CardDestaqueContent{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,7 +22,7 @@ a {
   flex-wrap: wrap;
 }
 
-.CardDestaque__Title{
+.CardDestaqueTitle{
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -32,7 +32,7 @@ a {
   width: 100%;
 }
 
-.CardDestaque__DestTitle{
+.CardDestaqueDestTitle{
   font-size: 0.8rem;
   color:#213f80;
   font-style: italic;
@@ -41,13 +41,13 @@ a {
   margin: 10px;
 }
 
-.CardDestaque__Image img{
+.CardDestaqueImage img{
   width: 300px;
   border-radius: 5px;
   margin: 20px;
 }
 
-.CardDestaque__Body{
+.CardDestaqueBody{
   display: flex;
   flex-direction: column;
   justify-content:space-between;
@@ -56,7 +56,7 @@ a {
   margin: 20px;
 }
 
-.CardDestaque__Introducao{
+.CardDestaqueIntroducao{
   font-family: Nunito Sans;
   font-size: 15px;
   font-weight: 400;
@@ -68,7 +68,7 @@ a {
   text-overflow: ellipsis;
 }
 
-.CardDestaque__Line{
+.CardDestaqueLine{
   font-family: Poppins;
   display: flex;
   flex-direction: row;
@@ -76,33 +76,31 @@ a {
   align-items: center;
   width: 100%;
   color: #999999;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-.CardDestaque__Link{
+.CardDestaqueLink{
   display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 23.1px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   color: white;
   padding: 10px;
-  gap: 10px;
-  width: 167px;
-  height: 26px;
+  width: 165px;
+  height: 36px;
   background: #039045;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 
-.CardDestaque__Link:hover{
+.CardDestaqueLink:hover{
   background: #426AB2;
 }
 
-.CardDestaque__Favorite{
+.CardDestaqueFavorite{
   display: flex;
   flex-direction: row;
   justify-content: right;

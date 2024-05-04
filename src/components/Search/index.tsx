@@ -13,7 +13,7 @@ export default function Search() {
     <div>
       <input
         onChange={ handleChange }
-        className={ styles.search }
+        className={ styles.Search }
         type="search"
         value={ inputSearch }
         placeholder="Search"

@@ -40,25 +40,25 @@ export default function CardNews({
 
   return (
     <div className={ styles.CardNews }>
-      <div data-testid="Box-Card-News" className={ styles.CardNews__Content }>
-        <div className={ styles.CardNews__Image } data-testid="Card-News-Imagem">
+      <div data-testid="Box-Card-News" className={ styles.CardNewsContent }>
+        <div className={ styles.CardNewsImage } data-testid="Card-News-Imagem">
           <img src={ ImgSrting } alt="NewsImg" />
         </div>
-        <h2 className={ styles.CardNews__Title } data-testid="Card-News-Titulo">
+        <h2 className={ styles.CardNewsTitle } data-testid="Card-News-Titulo">
           {titulo}
         </h2>
 
-        <p className={ styles.CardNews__Introducao } data-testid="Card-News-Introducao">
+        <p className={ styles.CardNewsIntroducao } data-testid="Card-News-Introducao">
           {introducao}
         </p>
-        <div className={ styles.CardNews__Line }>
-          <p className={ styles.CardNews__Data } data-testid="Card-News-Data">
+        <div className={ styles.CardNewsLine }>
+          <p className={ styles.CardNewsData } data-testid="Card-News-Data">
             {DataReroativaString}
           </p>
 
           <a
             href={ link }
-            className={ styles.CardNews__Link }
+            className={ styles.CardNewsLink }
             target="_blank"
             rel="noopener noreferrer"
             data-testid="Card-News-Link"
@@ -67,8 +67,8 @@ export default function CardNews({
           </a>
         </div>
 
-        <div className={ styles.CardNews__Line }>
-          <p className={ styles.CardNews__Tipo } data-testid="Card-News-tipo">
+        <div className={ styles.CardNewsLine }>
+          <p className={ styles.CardNewsTipo } data-testid="Card-News-tipo">
             {tipo}
           </p>
           <BtnFavorite

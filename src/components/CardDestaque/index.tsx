@@ -40,26 +40,26 @@ export default function CardDestaque({
 
   return (
     <div className={ styles.CardDestaque } data-testid={ `${id}-recommendation-title` }>
-      <p className={ styles.CardDestaque__DestTitle }>Notícia mais recente</p>
-      <div className={ styles.CardDestaque__Content }>
-        <div className={ styles.CardDestaque__Image }>
+      <p className={ styles.CardDestaqueDestTitle }>Notícia mais recente</p>
+      <div className={ styles.CardDestaqueContent }>
+        <div className={ styles.CardDestaqueImage }>
           <img src={ ImgSrting } alt="NewsImg" />
         </div>
-        <div className={ styles.CardDestaque__Body }>
-          <h2 className={ styles.CardDestaque__Title }>
+        <div className={ styles.CardDestaqueBody }>
+          <h2 className={ styles.CardDestaqueTitle }>
             {titulo}
           </h2>
-          <p className={ styles.CardDestaque__Introducao }>
+          <p className={ styles.CardDestaqueIntroducao }>
             {introducao}
           </p>
-          <div className={ styles.CardDestaque__Line }>
-            <p className={ styles.CardDestaque__Data }>
+          <div className={ styles.CardDestaqueLine }>
+            <p className={ styles.CardDestaqueData }>
               {DataReroativaString}
             </p>
 
             <a
               href={ link }
-              className={ styles.CardDestaque__Link }
+              className={ styles.CardDestaqueLink }
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,8 +67,8 @@ export default function CardDestaque({
             </a>
           </div>
 
-          <div className={ styles.CardDestaque__Line }>
-            <p className={ styles.CardDestaque__Tipo }>
+          <div className={ styles.CardDestaqueLine }>
+            <p className={ styles.CardDestaqueTipo }>
               {tipo}
             </p>
             <BtnFavorite
