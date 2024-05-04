@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { FavoriteType } from '../../types';
 import styles from './BtnFavorite.module.css';
 import FavoriteYes from '../../assets/FavoriteYes.svg';
@@ -15,15 +15,15 @@ import IBGEContext from '../../context/IBGEContext';
 // };
 
 export default function BtnFavorite({ newsFavorite }: { newsFavorite: FavoriteType }) {
-  const [isFavorite, setIsFavorite] = React.useState<boolean>(false);
+  const [isFavorite, setIsFavorite] = useState<boolean>(false);
 
   const { favorite, updateFavorite } = useContext(IBGEContext);
 
-  React.useEffect(() => {
-    const check = favorite.some((item: any) => item.id === newsFavorite.id)
+  useEffect(() => {
+    const check = favorite.some((item: any) => item.id === newsFavorite.id);
     setIsFavorite(check);
-  },[favorite])
-  
+  }, [favorite, newsFavorite.id]);
+
   const handleClick = () => {
     updateFavorite(newsFavorite);
   };
@@ -31,8 +31,8 @@ export default function BtnFavorite({ newsFavorite }: { newsFavorite: FavoriteTy
   return (
     <button
       className={ styles.BtnFavorite }
-      type="button" 
-      onClick={ () => {handleClick();}}
+      type="button"
+      onClick={ () => { handleClick(); } }
       data-testid="favorite-btn"
     >
       <img
