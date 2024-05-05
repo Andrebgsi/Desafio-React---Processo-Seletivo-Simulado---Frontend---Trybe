@@ -22,28 +22,28 @@ export default function CardDestaque({
 
     const agora: Date = new Date();
     const dataPublicacao: Date = new Date(ano, mes, dia);
-    const diferencaMilissegundos: number = agora.getTime() - dataPublicacao.getTime();
+    const diferencaMilisSegundos: number = agora.getTime() - dataPublicacao.getTime();
 
     // Converter a diferença em milissegundos para dias
     const diasPassados: number = Math
-      .floor(diferencaMilissegundos / (1000 * 60 * 60 * 24));
+      .floor(diferencaMilisSegundos / (1000 * 60 * 60 * 24));
 
     return diasPassados;
   }
 
-  const DataReroativa = calcularDiasPassados(data_publicacao);
-  const DataReroativaString = DataReroativa === 1
-    ? `${DataReroativa} dia atrás`
-    : `${DataReroativa} dias atrás`;
+  const DataRetroativa = calcularDiasPassados(data_publicacao);
+  const DataRetroativaString = DataRetroativa === 1
+    ? `${DataRetroativa} dia atrás`
+    : `${DataRetroativa} dias atrás`;
 
-  const ImgSrting = `https://agenciadenoticias.ibge.gov.br/${imageIntro}`;
+  const imgSrting = `https://agenciadenoticias.ibge.gov.br/${imageIntro}`;
 
   return (
     <div className={ styles.CardDestaque } data-testid={ `${id}-recommendation-title` }>
       <p className={ styles.CardDestaqueDestTitle }>Notícia mais recente</p>
       <div className={ styles.CardDestaqueContent }>
         <div className={ styles.CardDestaqueImage }>
-          <img src={ ImgSrting } alt="NewsImg" />
+          <img src={ imgSrting } alt="NewsImg" />
         </div>
         <div className={ styles.CardDestaqueBody }>
           <h2 className={ styles.CardDestaqueTitle }>
@@ -54,7 +54,7 @@ export default function CardDestaque({
           </p>
           <div className={ styles.CardDestaqueLine }>
             <p className={ styles.CardDestaqueData }>
-              {DataReroativaString}
+              {DataRetroativaString}
             </p>
 
             <a

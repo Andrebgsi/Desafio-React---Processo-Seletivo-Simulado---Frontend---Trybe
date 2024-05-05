@@ -5,15 +5,6 @@ import FavoriteYes from '../../assets/FavoriteYes.svg';
 import FavoriteNo from '../../assets/FavoriteNo.svg';
 import IBGEContext from '../../context/IBGEContext';
 
-// export type FavoriteType = {
-//   id: number;
-//   introducao: string;
-//   link: string;
-//   titulo: string;
-//   DataReroativaString: string;
-//   ImgSrting: string;
-// };
-
 export default function BtnFavorite({ newsFavorite }: { newsFavorite: FavoriteType }) {
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
 

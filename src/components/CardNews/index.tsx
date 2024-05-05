@@ -22,27 +22,27 @@ export default function CardNews({
 
     const agora: Date = new Date();
     const dataPublicacao: Date = new Date(ano, mes, dia);
-    const diferencaMilissegundos: number = agora.getTime() - dataPublicacao.getTime();
+    const diferencaMilisSegundos: number = agora.getTime() - dataPublicacao.getTime();
 
     // Converter a diferença em milissegundos para dias
     const diasPassados: number = Math
-      .floor(diferencaMilissegundos / (1000 * 60 * 60 * 24));
+      .floor(diferencaMilisSegundos / (1000 * 60 * 60 * 24));
 
     return diasPassados;
   }
 
-  const DataReroativa = calcularDiasPassados(data_publicacao);
-  const DataReroativaString = DataReroativa === 1
-    ? `${DataReroativa} dia atrás`
-    : `${DataReroativa} dias atrás`;
+  const DataRetroativa = calcularDiasPassados(data_publicacao);
+  const DataRetroativaString = DataRetroativa === 1
+    ? `${DataRetroativa} dia atrás`
+    : `${DataRetroativa} dias atrás`;
 
-  const ImgSrting = `https://agenciadenoticias.ibge.gov.br/${imageIntro}`;
+  const imgSrting = `https://agenciadenoticias.ibge.gov.br/${imageIntro}`;
 
   return (
     <div className={ styles.CardNews }>
       <div data-testid="Box-Card-News" className={ styles.CardNewsContent }>
         <div className={ styles.CardNewsImage } data-testid="Card-News-Imagem">
-          <img src={ ImgSrting } alt="NewsImg" />
+          <img src={ imgSrting } alt="NewsImg" />
         </div>
         <h2 className={ styles.CardNewsTitle } data-testid="Card-News-Titulo">
           {titulo}
@@ -53,7 +53,7 @@ export default function CardNews({
         </p>
         <div className={ styles.CardNewsLine }>
           <p className={ styles.CardNewsData } data-testid="Card-News-Data">
-            {DataReroativaString}
+            {DataRetroativaString}
           </p>
 
           <a
